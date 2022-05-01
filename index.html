@@ -73,7 +73,13 @@
 	0%{transform: translateX(-50%);}
 	100%{transform: translateX(100%);}
 }
-
+#bgv{
+	position:fixed;
+	top:120px;
+	left:0;
+	min-width:100%;
+	min-height:auto;
+}
 
 
 
@@ -97,7 +103,9 @@
 </head>
 <body>
 
-	Hello!
+	<video autoplay loop muted id="bgv">
+			<source src="web.mp4" type="video/mp4">
+		</video>
 
 
 <div class="headbase"></div>
