@@ -1,0 +1,302 @@
+<!doctype html>
+<script src="p5.js"></script> 
+<script src="p5.sound.min.js"></script> 
+<script src="sketch17.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<html>
+	
+<head>
+<meta charset="utf-8">
+<title>WORKS</title>
+
+<link rel="shortcut icon" type="image/png" href="icon.png">
+<style type="text/css">
+	.html::-webkit-scrollbar{
+  display: none;
+}
+
+.headblock{
+	width:100%;
+	height:100px;
+	position:fixed;
+	top: 25px;
+	background-color: #ffffff;
+}
+.headbase{
+	width:100%;
+	height:100px;
+	position:fixed;
+	top: 0px;
+	background-color: #ffffff;
+
+}
+.titleblock{
+	width:280px;
+	height:100px;
+	position:fixed;
+	top: 25px;
+	left:0px;
+	background-color:  rgb(255, 255, 255);
+}
+.title{
+	position:fixed;
+	top: -1px;
+	left:0px;
+}
+.content{
+	position: fixed;
+	left: 32px;
+	bottom: 14px;
+}
+.content a{
+	font-family: 'Open Sans', sans-serif;
+	font-stretch: 200%;
+	font-size: 18px;
+	font-weight: 300;
+	text-decoration: none;
+	margin: 15px;
+	color: black;
+}
+.content a:hover{
+	font-family: 'Open Sans', sans-serif;
+	font-stretch: 200%;
+	font-size: 18px;
+	font-weight: 300;
+	text-decoration: none;
+	margin: 15px;
+	color: #F12F9D;
+}
+
+.animation{
+	animation:animate 20s linear infinite ;}
+@keyframes animate{
+	0%{transform: translateX(-50%);}
+	100%{transform: translateX(100%);}
+}
+
+.container{
+	max-width: 90%;
+	height:1490px;
+	position: absolute;
+	top: 180px;
+	left: 120px;
+	margin: auto;
+	overflow: auto;
+}
+.gallery{
+	margin:10px;
+	float: left;
+	top:0;
+  width: 400px;
+  height:282.82px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: relative;
+  top: -287px;
+  
+  left: 0px;
+  right: 0;
+  width: 400px;
+  height: 281.82px;
+  margin:0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(83, 83, 83,0.5);
+  
+}
+
+.gallery:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  width: 400px;
+  height:auto;
+  line-height:281.82px;
+  text-align: center;
+}
+
+.footer{
+	position:absolute;
+	top: 170%;
+	left: 48%;
+	margin-left: -120px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 24px;
+	color: rgb(83, 83, 83);
+	z-index:-100%;
+}
+.footerbase{
+	position:absolute;
+	top:152%;
+	width:100%;
+	height:250px;
+	background-color: rgba(83, 83, 83,0);
+	margin:0;
+}
+</style>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+	</style>
+
+</head>
+<body>
+
+	
+	<div class="footer">
+	   <p>NTUB CDM 111th GRADUATION EXHIBITION</p>
+	</div>
+<div class="container">
+
+	
+	<div class="gallery">
+		<a href="index16.html"><img src="G16_0.jpg" alt="">
+			<div class="overlay">
+		    <div class="text">? X !</div>
+		</a>
+	       </div>
+		
+	</div>
+	<div class="gallery">
+		<a href="index8.html"><img src="G8_0.jpg" alt="">
+			<div class="overlay">
+		       <div class="text">探蘚家</div>
+	       </div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="index1.html"><img src="G1_0.jpg" alt="">
+			<div class="overlay">
+		       <div class="text">台憶 Tâi-Gí</div>
+	       </div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="index2.html"><img src="G2_0.jpg" alt="">
+			<div class="overlay">
+		       <div class="text">HI,SEAYOU</div>
+	       </div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="index3.html"><img src="G3_0.jpg" alt="">
+			<div class="overlay">
+		       <div class="text">惱 迴路</div>
+	       </div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="index4.html"><img src="G4_0.jpg" alt="">
+			<div class="overlay">
+		       <div class="text">貼標籤</div>
+	       </div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="index9.html"><img src="G9_0.jpg" alt="">
+			<div class="overlay">
+		       <div class="text">以我微粒！</div>
+	       </div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="index7.html"><img src="G7_0.jpg" alt="">
+			<div class="overlay">
+		       <div class="text">DOSE 治鬱劑</div>
+	       </div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="index10.html"><img src="G10_0.jpg" alt="">
+			<div class="overlay">
+		       <div class="text">思系青年</div>
+	       </div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="index5.html"><img src="G5_00.jpg" alt="">
+			<div class="overlay">
+		       <div class="text">環環相扣</div>
+	       </div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="index12.html"><img src="G12_0.jpg" alt="">
+			<div class="overlay">
+		       <div class="text">寄念品</div>
+	       </div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="index11.html"><img src="G11_0.jpg" alt="">
+			<div class="overlay">
+		       <div class="text">上善若水</div>
+	       </div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="index6.html"><img src="G6_0.jpg" alt="">
+			<div class="overlay">
+		       <div class="text">YOYA</div>
+	       </div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="index13.html"><img src="G13_0.jpg" alt="">
+			<div class="overlay">
+		       <div class="text">蒂茶</div>
+	       </div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="index14.html"><img src="G14_00.jpg" alt="">
+			<div class="overlay">
+		       <div class="text">好好重視自己</div>
+	       </div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="index15.html"><img src="G15_0.jpg" alt="">
+			<div class="overlay">
+		       <div class="text">翌日</div>
+	       </div>
+		</a>
+	</div>
+	
+</div>
+
+<div class="footerbase"></div>
+<div class="headbase"></div>
+
+<div class="headblock">
+	<div class="animation"> 
+      <img  src="website use.png" width="1096" height="100"alt></div>
+</div>
+<div class="titleblock"></div>
+<div class="title">
+	<a href="index.html" target="_self"><img  src="111title.png" width="270" alt></a>
+</div>
+
+
+
+<div class="content a">
+	<a href="index.html" target="_self">HOME  </a>
+	<a href="index0.html" target="_self">ABOUT</a>
+	<a href="index17.html" target="_self">WORKS</a>
+</div> 
+</body>
+</html>
