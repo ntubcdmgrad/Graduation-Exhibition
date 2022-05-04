@@ -22,7 +22,7 @@ function windowResized(){
 function setup() {
 var canvas;
   let H;
-  H = (windowHeight / 2) * 5 ;
+  H = (windowHeight / 2) *4 ;
   canvas=createCanvas(windowWidth-17,H);
   // canvas=createCanvas(1920-17, TopSpace + H + H + H + H-150 );
   canvas.position(0,0);
