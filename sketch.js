@@ -22,8 +22,8 @@ function windowResized(){
 function setup() {
 var canvas;
   let H;
-  H = (windowHeight / 2) * 6+300 ;
-  canvas=createCanvas(windowWidth-17,windowHeight);
+  H = (windowHeight / 2) * 5 ;
+  canvas=createCanvas(windowWidth-17,H);
   // canvas=createCanvas(1920-17, TopSpace + H + H + H + H-150 );
   canvas.position(0,0);
   canvas.style('z-index','-1');
