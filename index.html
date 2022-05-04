@@ -82,7 +82,16 @@
 }
 
 
-
+#conceptv{
+	width:86%;
+	min-height:auto;
+}
+.video{
+	position:absolute;
+	top:1020px;
+	left:13%;
+	width:1200;
+}
 .footer{
 	position:absolute;
 	bottom: 10px;
@@ -106,7 +115,15 @@
 	<video autoplay loop muted id="bgv">
 			<source src="web+.mp4" type="video/mp4">
 		</video>
-
+<div class="video">
+	<video autoplay loop controls id="conceptv">
+		<source src="concept.mp4" type="video/mp4">
+		<script>
+			var video = document.currentScript.parentElement;
+			video.volume = 0.2;
+			</script>
+	</video>
+</div>
 
 <div class="headbase"></div>
 
